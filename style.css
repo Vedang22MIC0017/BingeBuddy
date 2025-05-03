@@ -1,0 +1,95 @@
+/* Modern UI styling for movie recommendation app */
+.stApp {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #fff;
+}
+
+/* Title styling */
+.stTitle {
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: center;
+    padding: 2rem 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Selectbox styling */
+.stSelectbox {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 0;
+    backdrop-filter: blur(10px);
+}
+
+/* Button styling */
+.stButton > button {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 0.8rem 2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    width: 200px;
+    margin: 2rem auto;
+    display: block;
+}
+
+.stButton > button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 75, 43, 0.4);
+}
+
+/* Movie card styling */
+.movie-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.movie-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.movie-card img {
+    border-radius: 10px;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.movie-card .movie-title {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+/* Grid layout improvements */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    width: 95vw;
+    margin: 0 auto;
+}
+
+/* Loading text styling */
+.stSpinner {
+    color: #ff4b2b;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 2rem auto;
+}
